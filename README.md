@@ -15,6 +15,7 @@ A No :- A00455338 <br/>
 
 Familier with Front end technologies ( HTML ,CSS ,Javascript ,React ,Bootstrap), Programming languages ( Python, JAVA, C , C++ ), .net <br/>
 
-
-
-
+Hobbies :-
+ Love dancing.
+ Like to swim.
+ 
