@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "r4b2DxqQqOVo5UUvCbTOkEedYSSATgFP/U9TCGZvlOS2I1WbQLyWugLraqSyhxydzYsdeCaA/1BB83VUZ+dC3g==",
+  "dgSpecHash": "Igj1ToADurPz2d9GBlvdyHd7lFdPCd5oeZCjyU3nPkIrH3hDpwQW0BmA1GhH8+sLFVpOJ/E27RE3CYD3e5NaEg==",
   "success": true,
   "projectFilePath": "D:\\Assignment1_software_Development\\Assignment1\\A00455338_MCDA5510\\Assignment1\\Assignment1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\navka\\.nuget\\packages\\log4net\\2.0.12\\log4net.2.0.12.nupkg.sha512",
+    "C:\\Users\\navka\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\navka\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\navka\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\navka\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "C:\\Users\\navka\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\navka\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

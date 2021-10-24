@@ -1,14 +1,22 @@
-﻿using Microsoft.VisualBasic.FileIO;
+﻿using log4net;
+using log4net.Config;
+using Microsoft.VisualBasic.FileIO;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 
 namespace Assignment1
 {
     class Program
     {
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public static void Main(string[] args)
         {
+
+            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+
             DirectoryTraverse dt = new DirectoryTraverse();
             List<string> fileList = new List<string>();
             Double skippedRecord = 0;
@@ -21,13 +29,17 @@ namespace Assignment1
                if (filepath.EndsWith("csv"))
                {
 
-                   Console.WriteLine("File:" + filepath);
+                   //Console.WriteLine("File:" + filepath);
                     skippedRecord=csvFile.parse(filepath);
-                    Console.WriteLine(skippedRecord);
+                    //Console.WriteLine(skippedRecord);
                    TotalRecords = TotalRecords + skippedRecord;
 
                }
            }
+            log.Info("Hello logging world!");
+            log.Error("Error!");
+            log.Warn("Warn!");
+
 
             Console.WriteLine(TotalRecords);
         }
