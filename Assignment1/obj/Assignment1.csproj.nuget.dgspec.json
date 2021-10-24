@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Assignment1_software_Development\\Assignment1\\Assignment1\\Assignment1.csproj": {}
+    "D:\\Assignment1_software_Development\\Assignment1\\A00455338_MCDA5510\\Assignment1\\Assignment1.csproj": {}
   },
   "projects": {
-    "D:\\Assignment1_software_Development\\Assignment1\\Assignment1\\Assignment1.csproj": {
+    "D:\\Assignment1_software_Development\\Assignment1\\A00455338_MCDA5510\\Assignment1\\Assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Assignment1_software_Development\\Assignment1\\Assignment1\\Assignment1.csproj",
+        "projectUniqueName": "D:\\Assignment1_software_Development\\Assignment1\\A00455338_MCDA5510\\Assignment1\\Assignment1.csproj",
         "projectName": "Assignment1",
-        "projectPath": "D:\\Assignment1_software_Development\\Assignment1\\Assignment1\\Assignment1.csproj",
+        "projectPath": "D:\\Assignment1_software_Development\\Assignment1\\A00455338_MCDA5510\\Assignment1\\Assignment1.csproj",
         "packagesPath": "C:\\Users\\navka\\.nuget\\packages\\",
-        "outputPath": "D:\\Assignment1_software_Development\\Assignment1\\Assignment1\\obj\\",
+        "outputPath": "D:\\Assignment1_software_Development\\Assignment1\\A00455338_MCDA5510\\Assignment1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\navka\\AppData\\Roaming\\NuGet\\NuGet.Config",
