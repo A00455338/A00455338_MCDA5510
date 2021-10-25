@@ -12,7 +12,7 @@ namespace Assignment1
         public void WriteData(string[] data,DateTime dt)
         {
             StreamWriter sw;
-            string path = @"D:\Assignment1_software_Development\Assignment1\A00455338_MCDA5510\Assignment1\Output\Output.txt";
+            string path = @"D:\Assignment1_software_Development\Assignment1\A00455338_MCDA5510\Assignment1\Output\Output.csv";
             if (!File.Exists(path))
             {
                 using (sw = File.CreateText(path))
