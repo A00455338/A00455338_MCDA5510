@@ -38,9 +38,5 @@ namespace Assignment1
             log.Info("Total number of Valid Records : " + TotalValidRecords);
             log.Info(" Elapsed Time is { 0 } s : "+(stopwatch.ElapsedMilliseconds)/1000);
         }
-
-
-
-      
     }
 }

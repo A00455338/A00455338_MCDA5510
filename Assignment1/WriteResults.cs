@@ -15,7 +15,6 @@ namespace Assignment1
             string path = @"D:\Assignment1_software_Development\Assignment1\A00455338_MCDA5510\Assignment1\Output\Output.txt";
             if (!File.Exists(path))
             {
-                // Create a file to write to.
                 using (sw = File.CreateText(path))
                 {
                     sw.Write("First Name, ");
@@ -33,7 +32,6 @@ namespace Assignment1
                 }
             }
 
-            // Open the file to read from.
             sw = new StreamWriter(path, true, Encoding.ASCII);
             for (int x = 0; x < data.Length; x++)
             {
