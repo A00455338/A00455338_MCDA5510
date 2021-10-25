@@ -18,9 +18,11 @@ namespace Assignment1
 
         //public static double sum = 0;
         private static double skippedRecords = 0;
+        private static double validRecords = 0;
+        double[] arr= new double[2];
         int flag = 0;
         int rowNumber = 0;
-        public double parse(String fileName)
+        public double[] parse(String fileName)
         {
 
             try
@@ -66,14 +68,20 @@ namespace Assignment1
                         {
                             skippedRecords++;
                         }
+                        else
+                        {
+                            validRecords++;
+                        }
                     }
                 }
-                return skippedRecords;
+                arr[0] = skippedRecords;
+                arr[1] = validRecords;
+                return arr;
             }
             catch (IOException ioe)
             {
                 Console.WriteLine(ioe.StackTrace);
-                return 0;
+                return null;
             }
 
         }
