@@ -29,21 +29,14 @@ namespace Assignment1
             fileList = dt.Walk("D:\\MCDA5510_Assignments\\Sample Data\\Sample Data");
             foreach (string filepath in fileList)
            {
-               if (filepath.EndsWith("csv"))
-               {
-
-                   //Console.WriteLine("File:" + filepath);
                     Records = csvFile.parse(filepath);
-                    //Console.WriteLine(skippedRecord);
                     TotalSkippedRecords = TotalSkippedRecords + Records[0];
                     TotalValidRecords = TotalValidRecords + Records[1];
-                }
            }
             stopwatch.Stop();
             log.Info("Total number of Skipped Records : "+ TotalSkippedRecords);
             log.Info("Total number of Valid Records : " + TotalValidRecords);
-            log.Info(" Elapsed Time is { 0 } ms : "+stopwatch.ElapsedMilliseconds);
-
+            log.Info(" Elapsed Time is { 0 } s : "+(stopwatch.ElapsedMilliseconds)/1000);
         }
 
 

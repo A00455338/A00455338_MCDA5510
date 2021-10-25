@@ -15,20 +15,19 @@ namespace Assignment1
     public class ParseCsvFile
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-
-        //public static double sum = 0;
         private static double skippedRecords = 0;
         private static double validRecords = 0;
         double[] arr= new double[2];
         int flag = 0;
         int rowNumber = 0;
+        WriteResults writedata = new WriteResults();
         public double[] parse(String fileName)
         {
-
             try
             {
                 using (TextFieldParser parser = new TextFieldParser(fileName))
                 {
+                    //DateTime dt = File.GetLastWriteTime(fileName);
                     parser.TextFieldType = FieldType.Delimited;
                     parser.SetDelimiters(",");
                     skippedRecords = 0;
@@ -68,9 +67,10 @@ namespace Assignment1
                         {
                             skippedRecords++;
                         }
-                        else
+                        else if (rowNumber!=1)
                         {
                             validRecords++;
+                            writedata.WriteData(fields,dt);
                         }
                     }
                 }

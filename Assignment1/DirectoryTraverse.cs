@@ -1,7 +1,9 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,33 +11,23 @@ namespace Assignment1
 {
     public class DirectoryTraverse
     {
+        private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private List<string> sampleList = new List<string>();
+        Exception exp = new Exception();
         public List<string> Walk(String path)
         {
-            
-            string[] list = Directory.GetDirectories(path);
+            string[] dirlist= exp.checkDirectory(path);
 
-
-            if (list == null) return null;
-
-            foreach (string dirpath in list)
+            foreach (string dirpath in dirlist)
             {
                 if (Directory.Exists(dirpath))
                 {
-                    Walk(dirpath);
-                    //Console.WriteLine("Dir:" + dirpath);
+                    Walk(dirpath); // For checking the directories 
                 }
             }
-            //Console.WriteLine("extra");
-            string[] fileList = Directory.GetFiles(path);
-            foreach (string filepath in fileList)
-            {
-                if (filepath.EndsWith("csv"))
-                {
-                     sampleList.Add(filepath);
-                }
-                //Console.WriteLine("File:" + filepath);
-            }
+
+            sampleList = exp.CheckFile(path);
+            
             return sampleList;
         }
     }
