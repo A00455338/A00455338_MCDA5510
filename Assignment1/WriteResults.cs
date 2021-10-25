@@ -39,7 +39,7 @@ namespace Assignment1
             {
                 sw.Write(data[x]+", ");
             }
-            sw.WriteLine(dt.Date);
+            sw.WriteLine(dt.Date.ToString("d"));
             sw.Close();
         }
     }

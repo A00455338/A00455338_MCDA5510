@@ -27,7 +27,7 @@ namespace Assignment1
             {
                 using (TextFieldParser parser = new TextFieldParser(fileName))
                 {
-                    //DateTime dt = File.GetLastWriteTime(fileName);
+                    DateTime dt = File.GetLastWriteTime(fileName);
                     parser.TextFieldType = FieldType.Delimited;
                     parser.SetDelimiters(",");
                     skippedRecords = 0;
