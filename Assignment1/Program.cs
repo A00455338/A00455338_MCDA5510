@@ -33,7 +33,6 @@ namespace Assignment1
                     skippedRecord=csvFile.parse(filepath);
                     //Console.WriteLine(skippedRecord);
                    TotalRecords = TotalRecords + skippedRecord;
-
                }
            }
             log.Info("Hello logging world!");
